@@ -1,12 +1,12 @@
-Obvyazka 2
+Obvyazka (2)
 ==========
 
-Intsallation
+Installation:
 ------------
 
 	npm install obvyazka
 
-Usage
+Usage:
 -----
 
 	var o = require('obvyazka');
@@ -29,7 +29,7 @@ Usage
 			{type:"HTTP", ip:"192.234.15.3", port:"80"}
 	]);	
 
-About
+About:
 -----
 
 This is second version of Obvyazka. So all entities we call with prefix o2. For example, o2-server, o2-connection, o2-transport etc.
@@ -74,18 +74,16 @@ S - UTF-string < 2Gb. Type of message - any string.
 	S      = 1 byte.   'S' character.
 	LT     = 2 bytes.  Length of type. Short (16 bit) unsigned int. LSB.
 	TYPE   = LT bytes. Type of message.
-	LENGN  = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
+	LENG   = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
 	DATA   = LN bytes. UTF-String.
 	
 J - JSON-string < 2Gb. Type of message - any string.
 
-    [J][LT][TYPE ... ][LENG][ DATA              ....   ]
+    [J][LENG][ DATA              ....   ]
 	
 	J      = 1 byte.   'J' character.
-	LT     = 2 bytes.  Length of type. Short (16 bit) unsigned int. LSB.
-	TYPE   = LT bytes. Type of message.
-	LENGN  = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
-	DATA   = LN bytes. UTF-String with JSON.
+	LENG   = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
+	DATA   = LN bytes. UTF-String with JSON like {"type":sendedObject}
 	
 B - BIGBINARY. Byte array < 2Gb. Type of message - any string.
 
@@ -94,7 +92,7 @@ B - BIGBINARY. Byte array < 2Gb. Type of message - any string.
 	B      = 1 byte.   'B' character.
 	LT     = 2 bytes.  Length of type. Short (16 bit) unsigned int. LSB.
 	TYPE   = LT bytes. Type of message.
-	LENGN  = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
+	LENG   = 4 bytes.  Length of DATA sector. 32-bit unsigned int. LSB.
 	DATA   = LN bytes. Binary data.
 
 #### Tiny messages (no header):
