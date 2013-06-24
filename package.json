@@ -6,9 +6,10 @@
 	"dependencies":{
 	},
 	"devDependencies":{
-		"nodeunit": "0.8.0"
+		"nodeunit": "0.8.0",
+        "istanbul":"0.1.37"
 	},
 	"scripts":{
-		"test": "nodeunit test"
+		"test": "istanbul cover nodeunit test"
 	}
 }
