@@ -1,9 +1,12 @@
 {
-	"name": "obvyakza",
+	"name": "obvyazka",
 	"description": "Obvyazka",
-	"version": "2.0.0",
-	"private": true,
+	"version": "0.0.2",
     "main": "./lib",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/prograess/obvyazka.git"
+    },
 	"dependencies":{
 	},
 	"devDependencies":{
