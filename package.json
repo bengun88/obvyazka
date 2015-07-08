@@ -8,6 +8,7 @@
         "url": "git://github.com/prograess/obvyazka.git"
     },
 	"dependencies":{
+		"engine.io": "1.5.1"
 	},
 	"devDependencies":{
 		"nodeunit": "0.8.0",
