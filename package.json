@@ -5,14 +5,14 @@
     "main": "./lib",
     "repository": {
         "type": "git",
-        "url": "git://github.com/prograess/obvyazka.git"
+        "url": "git://github.com/bengun88/obvyazka.git"
     },
 	"dependencies":{
-		"engine.io": "1.5.1"
+		"engine.io": "1.6.8"
 	},
 	"devDependencies":{
-		"nodeunit": "0.8.0",
-        "istanbul":"0.1.42"
+		"nodeunit": "^0.8.0",
+        "istanbul":"^0.1.42"
 	},
 	"scripts":{
 		"test": "istanbul cover nodeunit test"
